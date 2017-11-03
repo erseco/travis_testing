@@ -9,7 +9,7 @@ before_script:
 - sudo apt-get -y install wazuh-agent
 
 script:
-- cat /var/ossec/log/ossec.log
-- /etc/init.d/wazuh-agent start
-- cat /var/ossec/log/ossec.log
+- sudo cat /var/ossec/log/ossec.log
+- sudo /etc/init.d/wazuh-agent start
+- sudo cat /var/ossec/log/ossec.log
 
