@@ -4,12 +4,10 @@ before_script:
 - sudo apt-get update -qq
 - curl -s https://packages.wazuh.com/key/GPG-KEY-WAZUH | sudo apt-key add -
 - echo "deb http://packages.wazuh.com.s3-website-us-west-1.amazonaws.com/3.x/apt/ unstable main" | sudo tee -a /etc/apt/sources.list
-- sudo apt-get update -q
+- sudo apt-get update -qq
 - sudo apt-get -y install wazuh-agent=3.0.0-0.1beta10
 - sudo apt-get -y install wazuh-agent
 
 script:
-- sudo cat /var/ossec/log/ossec.log
 - sudo /etc/init.d/wazuh-agent start
-- sudo cat /var/ossec/log/ossec.log
 
