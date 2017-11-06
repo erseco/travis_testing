@@ -11,5 +11,5 @@ before_script:
 
 script:
 #- sudo /etc/init.d/wazuh-agent start
-- debsums -c wazuh-agent
+- sudo debsums -c wazuh-agent
 
