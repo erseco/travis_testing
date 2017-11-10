@@ -1,2 +1,2 @@
 # travis_testing
-Travis testing 
+Repository for custom travis deb package testing 
