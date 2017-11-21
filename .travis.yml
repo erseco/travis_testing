@@ -10,6 +10,7 @@ before_script:
 - sudo apt-get -y install wazuh-api
 
 script:
+- ping -c 4 www.google.es
 - curl foo:bar@localhost:55000
 
 
